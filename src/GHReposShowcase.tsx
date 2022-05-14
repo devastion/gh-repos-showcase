@@ -62,6 +62,7 @@ export interface ComponentOptions {
   backgroundColor?: string;
   languagesColors?: languageColorsObject;
   folder?: string;
+  columns?: number;
 }
 
 const componentOptions: ComponentOptions = {
@@ -71,6 +72,7 @@ const componentOptions: ComponentOptions = {
   backgroundColor: "",
   languagesColors: {},
   folder: folder,
+  columns: 3,
 };
 
 export const Options = React.createContext<ComponentOptions>(componentOptions);
@@ -82,6 +84,7 @@ export default function GHReposShowcase({
   backgroundColor,
   languagesColors,
   folder,
+  columns,
 }: ComponentOptions) {
   const userOptions = React.useMemo(
     () => ({
@@ -91,6 +94,7 @@ export default function GHReposShowcase({
       backgroundColor,
       languagesColors,
       folder,
+      columns,
     }),
     []
   );
@@ -98,7 +102,7 @@ export default function GHReposShowcase({
   return (
     <Options.Provider value={userOptions}>
       <Container>
-        <Wrapper>
+        <Wrapper columns={columns}>
           <RepoCard />
         </Wrapper>
       </Container>
@@ -120,4 +124,5 @@ GHReposShowcase.defaultProps = {
     Java: "#edd157",
   },
   folder: folder,
+  columns: 3,
 };

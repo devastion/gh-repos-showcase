@@ -14,6 +14,7 @@ declare interface ComponentOptions {
   descriptionColor?: string;
   backgroundColor?: string;
   languagesColors?: languageColorsObject;
+  columns?: number;
 }
 
 declare module "*.png" {
@@ -22,6 +23,10 @@ declare module "*.png" {
 }
 
 // * TYPES
+declare type WrapperProps = {
+  columns?: number;
+};
+
 declare type RepoCardTitlesProps = {
   languageColor?: string;
   descriptionColor?: string;

@@ -12,6 +12,7 @@ styled components and React component packaging.
 npm i gh-repos-showcase
 import GHReposShowcase from "gh-repos-showcase"
 <GHReposShowcase username="your_gh_profile" />
+Note: You must provide username
 ```
 
 ## Options
@@ -31,7 +32,8 @@ const colors = {
     Java: "#edd157"
     })
 folder - accepts url for the folder icon
-example: <GHReposShowcase username="devastion" titleColor="#3c4043" descriptionColor="red" backgroundColor="yellow" languagesColors={colors} folder="myUrl" />
+colums (max 5) - columns number maximum 5
+example: <GHReposShowcase username="devastion" titleColor="#3c4043" descriptionColor="red" backgroundColor="yellow" languagesColors={colors} folder="myUrl" columns={4} />
 ```
 
 ## Demo
@@ -47,4 +49,4 @@ example: <GHReposShowcase username="devastion" titleColor="#3c4043" descriptionC
 
 ## 🛠 TO DO
 
-- Option for layout rows and cols
+- ~~Option for layout rows and cols~~

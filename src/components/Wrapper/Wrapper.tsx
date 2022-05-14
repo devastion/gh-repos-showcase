@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // ! margin-right because of the box-shadow
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<Pick<WrapperProps, "columns">>`
   @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
 
   font-family: "Fira Code", monospace;
@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   }
 
   @media (min-width: 1280px) {
-    width: 72rem;
+    width: ${(props) => (props.columns ? `${props.columns * 24}rem` : "72rem")};
   }
 `;
 

@@ -6,6 +6,6 @@ const container = document.getElementById("root") || new DocumentFragment();
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <GHReposShowcase username="devastion" />
+    <GHReposShowcase username="devastion" columns={3} />
   </React.StrictMode>
 );
