@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+## [1.4.0](https://github.com/devastion/gh-repos-showcase/compare/v1.3.2...v1.4.0) (2022-05-14)
+
+### Features
+
+- added columns option
+  ([76e26d3](https://github.com/devastion/gh-repos-showcase/commit/76e26d336ba02fb56121512ef56aa6c0d41567dc))
+
+### Docs
+
+- updated the readme and fixed dependencies
+  ([05bab0d](https://github.com/devastion/gh-repos-showcase/commit/05bab0d08dedf10f51d7fbfbbf555e04f8b229f4))
+
 ### [1.3.2](https://github.com/devastion/gh-repos-showcase/compare/v1.3.1...v1.3.2) (2022-05-14)
 
 ### Features
