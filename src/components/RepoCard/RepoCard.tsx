@@ -5,7 +5,6 @@ import { Options } from "../../GHReposShowcase";
 import RepoCardContainer from "../RepoCardContainer";
 import Titles from "../RepoCardTitles";
 import RepoCardButton from "../RepoCardButton";
-import folder from "./folder.png";
 
 export interface Repo {
   id: number;
@@ -25,6 +24,7 @@ export default function RepoCard() {
     descriptionColor,
     backgroundColor,
     languagesColors,
+    folder,
   } = options;
 
   const GITHUB_API_URL = `https://api.github.com/users/${username}/repos`;

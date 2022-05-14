@@ -3,7 +3,8 @@
 ## Goal
 
 The goal is to migrate repositories section of my
-[personal website](https://devastion.net/) into npm package
+[personal website](https://devastion.net/) into npm package. Also practice some
+styled components and react component packaging.
 
 ## Usage
 
@@ -29,11 +30,18 @@ const colors = {
     Python: "#ef4528",
     Java: "#edd157"
     })
-example: <GHReposShowcase username="devastion" titleColor="#3c4043" descriptionColor="red" backgroundColor="yellow" languagesColors={colors} />
+folder - accepts url for the folder icon
+example: <GHReposShowcase username="devastion" titleColor="#3c4043" descriptionColor="red" backgroundColor="yellow" languagesColors={colors} folder="myUrl" />
 ```
 
 ## Demo
 
+\*This is the default look
+
 ![Demo](https://raw.githubusercontent.com/devastion/gh-repos-showcase/main/demo.png)
 
 ## To be continued 🚀
+
+## 🛠 TO DO
+
+- Option for layout rows and cols

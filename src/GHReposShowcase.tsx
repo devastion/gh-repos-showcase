@@ -2,6 +2,7 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 import { Container, Wrapper } from "./components/Wrapper";
 import RepoCard from "./components/RepoCard";
+import folder from "./folder.png";
 
 // ? CSS RESET
 const GlobalStyles = createGlobalStyle`
@@ -60,6 +61,7 @@ export interface ComponentOptions {
   descriptionColor?: string;
   backgroundColor?: string;
   languagesColors?: languageColorsObject;
+  folder?: string;
 }
 
 const componentOptions: ComponentOptions = {
@@ -68,6 +70,7 @@ const componentOptions: ComponentOptions = {
   descriptionColor: "",
   backgroundColor: "",
   languagesColors: {},
+  folder: folder,
 };
 
 export const Options = React.createContext<ComponentOptions>(componentOptions);
@@ -78,6 +81,7 @@ export default function GHReposShowcase({
   descriptionColor,
   backgroundColor,
   languagesColors,
+  folder,
 }: ComponentOptions) {
   const userOptions = React.useMemo(
     () => ({
@@ -86,6 +90,7 @@ export default function GHReposShowcase({
       descriptionColor,
       backgroundColor,
       languagesColors,
+      folder,
     }),
     []
   );
@@ -114,4 +119,5 @@ GHReposShowcase.defaultProps = {
     Python: "#ef4528",
     Java: "#edd157",
   },
+  folder: folder,
 };
