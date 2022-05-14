@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [1.4.1](https://github.com/devastion/gh-repos-showcase/compare/v1.4.0...v1.4.1) (2022-05-14)
+
+### Docs
+
+- updated readme
+  ([e7a4eb4](https://github.com/devastion/gh-repos-showcase/commit/e7a4eb49997fe303791f2ac5f98ef3ebbbd9ce13))
+
 ## [1.4.0](https://github.com/devastion/gh-repos-showcase/compare/v1.3.2...v1.4.0) (2022-05-14)
 
 ### Features

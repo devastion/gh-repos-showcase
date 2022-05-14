@@ -1,6 +1,6 @@
 {
   "name": "gh-repos-showcase",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Render your repos in an nice visual way!",
   "packageManager": "yarn@3.2.1",
   "type": "module",
@@ -8,8 +8,12 @@
   "main": "lib/main.cjs",
   "types": "lib/types.d.ts",
   "module": "lib/module.mjs",
+  "private": true,
   "files": [
     "lib/*"
+  ],
+  "workspaces": [
+    "package-test"
   ],
   "browserslist": [
     "last 2 version",
