@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    // "plugin:unicorn/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "import",
+    "react-perf"
+    // "unicorn"
+  ],
+  "rules": {
+    "import/no-unresolved": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_" }
+    ],
+    // "unicorn/filename-case": [
+    //   "error",
+    //   {
+    //     "cases": {
+    //       "pascalCase": true,
+    //       "camelCase": true
+    //     }
+    //   }
+    // ],
+    "react/jsx-no-useless-fragment": 0,
+    "@typescript-eslint/no-unsafe-assignment": 0,
+    "@typescript-eslint/naming-convention": 0,
+    "no-restricted-exports": 0,
+    "import/no-cycle": 0
+  }
+}
