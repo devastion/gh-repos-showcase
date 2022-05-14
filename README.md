@@ -4,7 +4,7 @@
 
 The goal is to migrate repositories section of my
 [personal website](https://devastion.net/) into npm package. Also practice some
-styled components and react component packaging.
+styled components and React component packaging.
 
 ## Usage
 
@@ -40,7 +40,10 @@ example: <GHReposShowcase username="devastion" titleColor="#3c4043" descriptionC
 
 ![Demo](https://raw.githubusercontent.com/devastion/gh-repos-showcase/main/demo.png)
 
-## To be continued 🚀
+## Tech Stack 🚀
+
+- React
+- Styled Components
 
 ## 🛠 TO DO
 

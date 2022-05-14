@@ -2,3 +2,4 @@ src/*.parcel.tsx
 *.js
 *.ts
 src/GHReposShowcase.tsx
+package-test
