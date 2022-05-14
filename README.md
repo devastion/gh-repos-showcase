@@ -50,3 +50,4 @@ example: <GHReposShowcase username="devastion" titleColor="#3c4043" descriptionC
 ## 🛠 TO DO
 
 - ~~Option for layout rows and cols~~
+- Ditch off usehooks-ts dependency (although it's a nice package 💪)
