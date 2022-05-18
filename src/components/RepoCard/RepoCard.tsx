@@ -1,6 +1,5 @@
 /* eslint-disable no-void */
 import React from "react";
-import { useEffectOnce } from "usehooks-ts";
 import { Options } from "../../GHReposShowcase";
 import RepoCardContainer from "../RepoCardContainer";
 import Titles from "../RepoCardTitles";
@@ -35,13 +34,13 @@ export default function RepoCard() {
   //     .catch((error) => console.error(error));
   // };
 
-  useEffectOnce(() => {
+  React.useEffect(() => {
     void (async function getRepos() {
       await fetch(GITHUB_API_URL)
         .then(async (response) => (await response.json()) as Repo[])
         .then((data) => setRepos(data));
     })();
-  });
+  }, [GITHUB_API_URL]);
 
   const handleOnClick = (url: string) => (_event: React.SyntheticEvent) =>
     window.open(url, "_blank");

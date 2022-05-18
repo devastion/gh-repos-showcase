@@ -3649,7 +3649,6 @@ __metadata:
     typescript: ^4.6.4
     typescript-plugin-styled-components: ^2.0.0
     typescript-styled-plugin: ^0.18.2
-    usehooks-ts: ^2.5.2
   languageName: unknown
   linkType: soft
 
@@ -6802,15 +6801,6 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 7167432de6817fe8e9e0c9684f1d2de2bb688c94388f7569f7dbdb1587c9f4ca2a77962f134ec90be0cc4d004c939ff0d05acc9f34a0db39a3c797dada262633
-  languageName: node
-  linkType: hard
-
-"usehooks-ts@npm:^2.5.2":
-  version: 2.5.2
-  resolution: "usehooks-ts@npm:2.5.2"
-  peerDependencies:
-    react: ">=16.8.0"
-  checksum: f9109c65b7c07f07c044156cef1fd7f35e441c5e6d999ef5df4c8d7ac9d972c5d1d1daec89beb9468b026891ffab83eabc81d0a2e36763690c47adc4883f7895
   languageName: node
   linkType: hard
 
