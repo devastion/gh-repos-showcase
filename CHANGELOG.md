@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file. See
 [standard-version](https://github.com/conventional-changelog/standard-version)
 for commit guidelines.
 
+### [1.4.2](https://github.com/devastion/gh-repos-showcase/compare/v1.4.0...v1.4.2) (2022-05-18)
+
+### Bug Fixes
+
+- .gitignore
+  ([302d635](https://github.com/devastion/gh-repos-showcase/commit/302d635b68617fca2dea7377c63c0dd490a639f4))
+- adding yarn workspaces
+  ([99ca9c0](https://github.com/devastion/gh-repos-showcase/commit/99ca9c0cc26e8d36da17c4c3bb9a87144f7c13f0))
+- removed usehooks dependency package
+  ([c237ad9](https://github.com/devastion/gh-repos-showcase/commit/c237ad903d9dda0b32fc87bf2aabb70b312c8a88))
+- updated yarn sdk for vscode compatability
+  ([20013e8](https://github.com/devastion/gh-repos-showcase/commit/20013e867bcef1f92719eba2dfcca7386e220f6d))
+
+### Docs
+
+- updated readme
+  ([e7a4eb4](https://github.com/devastion/gh-repos-showcase/commit/e7a4eb49997fe303791f2ac5f98ef3ebbbd9ce13))
+
+### Other
+
+- **release:** 1.4.1
+  ([bf0c9d3](https://github.com/devastion/gh-repos-showcase/commit/bf0c9d3562b3b3f52f63c5161717742f9d4091b4))
+
 ### [1.4.1](https://github.com/devastion/gh-repos-showcase/compare/v1.4.0...v1.4.1) (2022-05-14)
 
 ### Docs
