@@ -11,5 +11,5 @@
 .parcel-cache
 dist
 lib
-package-test
+package_test
 package.tgz
