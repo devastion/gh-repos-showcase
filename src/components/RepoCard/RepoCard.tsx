@@ -16,7 +16,6 @@ export interface Repo {
 
 export default function RepoCard() {
   const [repos, setRepos] = React.useState<Repo[] | undefined>([]);
-  const [shown, setShown] = React.useState<number>(6);
   const options = React.useContext(Options);
   const {
     username,
@@ -49,9 +48,8 @@ export default function RepoCard() {
   const getLangColor = (lang: string) =>
     languagesColors && languagesColors[lang];
 
-  const renderRepos = repos
-    ?.slice(0, shown)
-    .map(({ id, name, description, language, homepage, html_url }) => {
+  const renderRepos = repos?.map(
+    ({ id, name, description, language, homepage, html_url }) => {
       const color = getLangColor(language);
 
       return (
@@ -81,16 +79,8 @@ export default function RepoCard() {
           </RepoCardContainer.ButtonsWrapper>
         </RepoCardContainer.RepoWrapper>
       );
-    });
-
-  const handleMore = () => setShown(shown + 3);
-
-  return (
-    <>
-      {renderRepos}
-      <button type="button" onClick={handleMore}>
-        load more
-      </button>
-    </>
+    }
   );
+
+  return <>{renderRepos}</>;
 }
