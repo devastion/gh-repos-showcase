@@ -1,6 +1,6 @@
 {
   "name": "gh-repos-showcase",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Render your repos in an nice visual way!",
   "packageManager": "yarn@3.2.1",
   "type": "module",
@@ -34,14 +34,15 @@
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "@swc/helpers": "^0.3.13",
+    "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
     "@parcel/packager-ts": "2.5.0",
     "@parcel/transformer-typescript-types": "2.5.0",
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.2.183",
-    "@swc/helpers": "^0.3.13",
     "@types/eslint": "^8",
     "@types/node": "^17.0.33",
     "@types/prettier": "^2",
@@ -67,7 +68,6 @@
     "parcel": "^2.5.0",
     "prettier": "^2.6.2",
     "react-is": "^18.1.0",
-    "regenerator-runtime": "^0.13.9",
     "standard-version": "^9.3.2",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4",
