@@ -4,6 +4,7 @@ import { Options } from "../../GHReposShowcase";
 import RepoCardContainer from "../RepoCardContainer";
 import Titles from "../RepoCardTitles";
 import RepoCardButton from "../RepoCardButton";
+import { LoadMoreButton } from "../RepoCardButton/RepoCardButton";
 
 export interface Repo {
   id: number;
@@ -28,12 +29,6 @@ export default function RepoCard() {
   } = options;
 
   const GITHUB_API_URL = `https://api.github.com/users/${username}/repos`;
-  // const getRepos = async () => {
-  //   await fetch(GITHUB_API_URL)
-  //     .then(async (response) => (await response.json()) as Repo[])
-  //     .then((data) => setRepos(data))
-  //     .catch((error) => console.error(error));
-  // };
 
   React.useEffect(() => {
     void (async function getRepos() {
@@ -88,9 +83,7 @@ export default function RepoCard() {
   return (
     <>
       {renderRepos}
-      <button type="button" onClick={handleMore}>
-        load more
-      </button>
+      <LoadMoreButton onClick={handleMore}>Load More </LoadMoreButton>
     </>
   );
 }
