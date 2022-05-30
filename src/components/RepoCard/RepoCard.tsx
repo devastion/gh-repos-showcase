@@ -16,7 +16,7 @@ export interface Repo {
 }
 
 export default function RepoCard() {
-  const [repos, setRepos] = React.useState<Repo[] | undefined>([]);
+  const [repos, setRepos] = React.useState<Repo[]>([]);
   const [shown, setShown] = React.useState<number>(6);
   const options = React.useContext(Options);
   const {
@@ -83,14 +83,9 @@ export default function RepoCard() {
   return (
     <>
       {renderRepos}
-      <LoadMoreButton onClick={handleMore}>Load More </LoadMoreButton>
-    </>
-  );
-
-  return (
-    <>
-      {renderRepos}
-      <LoadMoreButton onClick={handleMore}>Load More </LoadMoreButton>
+      {repos.length > shown ? (
+        <LoadMoreButton onClick={handleMore}>Load More </LoadMoreButton>
+      ) : null}
     </>
   );
 }
